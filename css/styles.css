@@ -246,6 +246,18 @@ ol {
   margin: 0 auto;
 }
 
+@media (min-resolution: 1x) {
+  .hero-background {
+    background-image: url("../images/peopleoffice1x.jpg");
+  }
+}
+
+@media (min-resolution: 2x) {
+  .hero-background {
+    background-image: url("../images/peopleoffice2x.jpg");
+  }
+}
+
 .button {
   display: block;
   min-width: 169px;
