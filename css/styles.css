@@ -237,7 +237,7 @@ ol {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/peopleoffice.jpg");
+    url("../images/peopleoffice-mob.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -248,13 +248,21 @@ ol {
 
 @media (min-resolution: 1x) {
   .hero-background {
-    background-image: url("../images/peopleoffice1x.jpg");
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/peopleoffice-mob1x.jpg");
   }
 }
 
 @media (min-resolution: 2x) {
   .hero-background {
-    background-image: url("../images/peopleoffice2x.jpg");
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/peopleoffice-mob2x.jpg");
   }
 }
 
@@ -291,11 +299,64 @@ ol {
     line-height: 107%;
   }
   .hero-background {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/peopleoffice-pl.jpg");
     padding: 112px 0;
+  }
+
+  @media (min-resolution: 1x) {
+    .hero-background {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/peopleoffice-pl1x.jpg");
+    }
+  }
+
+  @media (min-resolution: 2x) {
+    .hero-background {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/peopleoffice-pl2x.jpg");
+    }
   }
 }
 
 @media screen and (min-width: 1158px) {
+  .hero-background {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/peopleoffice.jpg");
+  }
+
+  @media (min-resolution: 1x) {
+    .hero-background {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/peopleoffice1x.jpg");
+    }
+  }
+
+  @media (min-resolution: 2x) {
+    .hero-background {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/peopleoffice2x.jpg");
+    }
+  }
+
   .hero-title {
     margin-bottom: 48px;
   }
@@ -309,7 +370,7 @@ ol {
 /*SECTION 2*/
 
 .ground-section-two {
-  padding: 96px 16px;
+  padding: 96px 0;
 }
 .visually-hidden {
   position: absolute;
@@ -328,6 +389,12 @@ ol {
   display: block;
 }
 
+.text {
+  margin-top: 72px;
+}
+.list-item > li:first-child {
+  margin-top: 0;
+}
 .icon-item {
   display: none;
 }
@@ -347,7 +414,6 @@ ol {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: var(--slate);
-  padding-bottom: 72px;
 }
 .list-item > li:last-child .content-text {
   padding-bottom: 0;
@@ -355,22 +421,20 @@ ol {
 
 @media screen and (min-width: 768px) {
   .list-item {
-    max-width: 736px;
     display: flex;
     flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .list-item > li:first-child {
+    margin-top: 72px;
   }
   .text {
     width: calc((100% - 24px) / 2);
     box-sizing: border-box;
   }
-  .content-text {
-    margin-left: 12px;
-    margin-right: 12px;
-  }
 
   .section-two-title {
     text-align: left;
-    margin-left: 12px;
   }
 }
 
@@ -385,7 +449,12 @@ ol {
   }
 
   .text {
+    margin-top: 0;
     width: calc((100% - 72px) / 4);
+  }
+
+  .list-item > li:first-child {
+    margin-top: 0px;
   }
 
   .icon-item {
@@ -409,6 +478,7 @@ ol {
 /*SECTION 3*/
 
 .ground-section-three {
+  padding: 96px 0;
   background: #f4f4fd;
 }
 
@@ -422,14 +492,11 @@ ol {
   text-transform: capitalize;
 }
 .list-foto {
-  /* max-width: 264px;
-        display: block;
-        margin: 72px 28px 96px 28px; */
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
-  margin: 72px auto 96px auto;
+  margin-top: 72px;
 }
 .fon_img {
   background-color: #fff;
@@ -497,6 +564,10 @@ ol {
     max-width: 552px;
     display: flex;
     gap: 24px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 72px;
   }
 
   .fon_img {
@@ -521,7 +592,7 @@ ol {
 /*SECTION 4*/
 
 .ground-section-four {
-  padding: 96px 16px 96px 16px;
+  padding: 96px 0;
 }
 
 .section-four-title {
@@ -783,7 +854,7 @@ ol {
 
   .footer-subscribe-form {
     flex-basis: 100%;
-    margin-top: 40px;
+    margin-top: 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -823,6 +894,7 @@ ol {
     max-width: 1158px;
     align-items: baseline;
     flex-wrap: nowrap;
+    gap: unset;
   }
   .logo-foot-container {
     margin-right: 120px;
