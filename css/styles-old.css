@@ -1,25 +1,19 @@
-/*HEADER*/
-
-/*SECTION 1*/
-
-/*SECTION 2*/
-
-/*SECTION 3*/
-
-/*menu*/
-
-/*SECTION 4*/
-
 /*FOOTER*/
 .ground-footer {
   padding: 100px 0;
 }
+
 .content-footer {
-  display: flex;
   align-items: baseline;
 }
+
 .logo-foot-container {
   margin-right: 120px;
+}
+
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .text-footer {
@@ -30,15 +24,156 @@
   margin-right: 80px;
 }
 
-.footer-social-text {
-  margin-bottom: 16px;
+.form-subscribe {
+  gap: 24px;
 }
 
-.social-item-footer {
-  display: flex;
-  gap: 16px;
+.footer-input-email {
+  width: 264px;
+  margin-right: 24px;
 }
 
+}
+/*FOOTER*/
+ .ground-footer {
+    background: var(--navy-blue);
+    padding: 100px 0;
+ }
+ .content-footer {
+   display: flex;
+   align-items: baseline;
+ }
+ .logo-foot-container {
+   margin-right: 120px;
+ }
+ .logo-footer {
+    font-family: var(--second-family);
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: var(--iris);
+   display: inline-block;
+   margin-bottom: 16px;
+ }
+
+ .logofooter-span {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16667;
+    color:  #f4f4fd;
+ }
+
+
+ .text-footer {
+    letter-spacing: 0.02em;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--cloud);
+    width: 264px;
+ }
+
+ .social-cont {
+   margin-right: 80px;
+ }
+ 
+ .footer-social-text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+ }
+
+ .social-item-footer {
+   display: flex;
+   gap: 16px;
+
+ }
+ .social-footer {
+   width: 40px;
+   height: 40px;
+ }
+
+ .social-link-footer {
+   width: 100%;
+   height: 100%;
+   background-color: #4d5ae5;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .social-link-footer:hover {
+   background-color: #31d0aa;
+ }
+
+ .social-link-footer:focus {
+   background-color: #31d0aa;
+ }
+
+ .social-link-icon {
+   fill: #f4f4fd;
+ }
+
+ .enter_email{
+   display: flex;
+      align-items: center;
+      justify-content: center;
+ }
+
+ .form-subscribe { 
+   display: flex;
+   gap: 24px;
+
+ }
+ .footer-input-email {
+   border: 1px solid #fff;
+      border-radius: 4px;
+      width: 264px;
+      height: 40px;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+      background-color: transparent;
+      font-size: 12px;
+      line-height: 2;
+      letter-spacing: 0.04em;
+      padding-left: 16px;
+      outline: none;
+      margin-right: 24px;
+      color: #fff;
+ }
+
+ .button-footer {
+   font-family: "Roboto", sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 1.5;
+   letter-spacing: 0.04em;
+   color: #ffff;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;
+   border-radius: 4px;
+   border: none;
+   padding: 8px 24px;
+   min-width: 165px;
+   height: 40px;
+   background-color: #4d5ae5;
+   
+ }
+
+ .button-svg-footer{
+   margin-left: 16px;
+   fill: #fff;; 
+ }
 /*MODAL*/
 .backdrop {
   position: fixed;
@@ -111,6 +246,7 @@
 }
 
 .title-live-contacts {
+  /* font-family: "Roboto", sans-serif; */
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -134,6 +270,15 @@
   position: relative;
   margin-bottom: 8px;
 }
+
+/* .popup-input-wrapper svg {
+   fill: transparent;
+   stroke: black;
+   position: absolute;
+   left: 16px;
+   top: 50%;
+   transform: translateY(-50%);
+  } */
 
 .popup-input-wrapper:has(input:hover) .popup-icon,
 .popup-input-wrapper:has(input:focus) .popup-icon {
@@ -168,6 +313,10 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* .popup-icon:focus .user-contacts-info {
+   fill: #4d5ae5;
+  } */
+
 input.user-contacts-info:focus + .popup-icon {
   fill: #4d5ae5;
 }
@@ -187,6 +336,7 @@ input.user-contacts-info:focus + .popup-icon {
   color: rgba(46, 47, 66, 0.4);
   resize: none;
   outline: transparent;
+  /* margin-bottom: 16px; */
   background-color: transparent;
   padding: 8px 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -221,6 +371,10 @@ input.user-contacts-info:focus + .popup-icon {
 
 .footer-checkbox-wrapper label {
   margin-bottom: 0;
+  /* display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 8px; */
 }
 
 .accent {
